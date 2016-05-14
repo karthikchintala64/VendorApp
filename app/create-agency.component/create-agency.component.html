@@ -1,1 +1,15 @@
 <h1>Welcome to Create Agency page!</h1>
+<form action="" class="form-group" role="form">
+    <div class="form-group">
+    <label for="firstName">First Name:</label>
+    <input type="text" class="form-control" id="firstName" required [(ngModel)]="firstName">
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name:</label>
+    <input type="text" class="form-control" id="lastName" required [(ngModel)]="lastName">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default" (click)="submitForm()">Submit</button>
+</form>
